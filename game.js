@@ -10,8 +10,8 @@ let gameStarted = false;
 let onloadImg;
 
 //bird
-let birdWidth = 34; //width/height ratio = 408/228 = 17/12
-let birdHeight = 24;
+let birdWidth = 50; //width/height ratio = 408/228 = 17/12
+let birdHeight = 40;
 let birdX = boardWidth / 8;
 let birdY = boardHeight / 2;
 
@@ -28,7 +28,7 @@ let bird = {
 
 //pipes
 let pipeArray = [];
-let pipeWidth = 64; //width/height ratio = 384/3072 = 1/8
+let pipeWidth = 54; //width/height ratio = 384/3072 = 1/8
 let pipeHeight = 512;
 let pipeX = boardWidth;
 let pipeY = 0;
@@ -79,13 +79,13 @@ window.onload = function () {
         )
     }
     birdUpImg = new Image();
-    birdUpImg.src = "./assets/sprites/redbird-upflap.png"
+    birdUpImg.src = "./assets/sprites/rio1.png"
 
     birdDownImg = new Image();
-    birdDownImg.src = "./assets/sprites/redbird-downflap.png"
+    birdDownImg.src = "./assets/sprites/rio1.png"
 
     birdMidImg = new Image();
-    birdMidImg.src = "./assets/sprites/redbird-midflap.png"
+    birdMidImg.src = "./assets/sprites/rio1.png"
     birdMidImg.onload = function () {
         context.drawImage(birdMidImg, bird.x, bird.y, bird.width, bird.height);
     }
