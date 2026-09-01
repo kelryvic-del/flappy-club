@@ -10,8 +10,8 @@ let gameStarted = false;
 let onloadImg;
 
 //bird
-let birdWidth = 50; //width/height ratio = 408/228 = 17/12
-let birdHeight = 40;
+let birdWidth = 55; //width/height ratio = 408/228 = 17/12
+let birdHeight = 45;
 let birdX = boardWidth / 8;
 let birdY = boardHeight / 2;
 
@@ -79,13 +79,13 @@ window.onload = function () {
         )
     }
     birdUpImg = new Image();
-    birdUpImg.src = "./assets/sprites/rio1.png"
+    birdUpImg.src = "./assets/sprites/calopsita1.png"
 
     birdDownImg = new Image();
-    birdDownImg.src = "./assets/sprites/rio1.png"
+    birdDownImg.src = "./assets/sprites/calopsita1.png"
 
     birdMidImg = new Image();
-    birdMidImg.src = "./assets/sprites/rio1.png"
+    birdMidImg.src = "./assets/sprites/calopsita1.png"
     birdMidImg.onload = function () {
         context.drawImage(birdMidImg, bird.x, bird.y, bird.width, bird.height);
     }
